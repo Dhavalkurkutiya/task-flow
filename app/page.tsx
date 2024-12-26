@@ -2,9 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/footer";
+import { useRouter } from "next/navigation";
+import {
+  RegisterLink,
+  useKindeBrowserClient,
+} from "@kinde-oss/kinde-auth-nextjs";
 
 const features = [
   {
@@ -160,6 +164,17 @@ const pricingPlans = [
 export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
+  const { isAuthenticated } = useKindeBrowserClient();
+  console.log(isAuthenticated);
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    if (!isAuthenticated) {
+      router.push("/login");
+    } else {
+      router.push("/dashboard");
+    }
+  };
   // Auto-rotate testimonials
   useEffect(() => {
     const timer = setInterval(() => {
@@ -183,9 +198,27 @@ export default function Home() {
                 management platform.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-4 bg-white text-blue-900 rounded-full font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-200 shadow-lg">
-                  <Link href="/dashboard">Go to Dashboard</Link>
-                </button>
+                {!isAuthenticated ? (
+                  <>
+                    <RegisterLink>
+                      <button
+                        onClick={handleButtonClick}
+                        className="px-8 py-4 bg-white text-blue-900 rounded-full font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-200 shadow-lg"
+                      >
+                        Ragister
+                      </button>
+                    </RegisterLink>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      onClick={handleButtonClick}
+                      className="px-8 py-4 bg-white text-blue-900 rounded-full font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-200 shadow-lg"
+                    >
+                      Go to Dashboard
+                    </button>
+                  </>
+                )}
               </div>
             </div>
             <div className="lg:w-1/2">

@@ -5,9 +5,11 @@ import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import Link from "next/link";
+import { useKindeBrowserClient, LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { isAuthenticated } = useKindeBrowserClient();
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background">
@@ -47,8 +49,21 @@ export default function Header() {
             </nav>
           </div>
           <div className="flex items-center gap-4">
-            <ModeToggle />
-            <UserNav />
+            {!isAuthenticated ? (
+              <>
+                <LoginLink>
+                  <Button variant="ghost">Log in</Button>
+                </LoginLink>
+                <RegisterLink>
+                  <Button>Sign up</Button>
+                </RegisterLink>
+              </>
+            ) : (
+              <>
+                <ModeToggle />
+                <UserNav />
+              </>
+            )}
             <Button
               variant="ghost"
               className="sm:hidden"

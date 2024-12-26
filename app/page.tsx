@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "@/components/footer";
 
 const features = [
   {
@@ -363,15 +364,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300">
-        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm">
-          <p className="pb-4">
-            &copy; {new Date().getFullYear()} TaskFlow. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

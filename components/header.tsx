@@ -51,10 +51,10 @@ export default function Header() {
           <div className="flex items-center gap-4">
             {!isAuthenticated ? (
               <>
-                <LoginLink>
+                <LoginLink postLoginRedirectURL="/dashboard">
                   <Button variant="ghost">Log in</Button>
                 </LoginLink>
-                <RegisterLink>
+                <RegisterLink postLoginRedirectURL="/dashboard">
                   <Button>Sign up</Button>
                 </RegisterLink>
               </>

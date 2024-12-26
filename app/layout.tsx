@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="light" style={{ colorScheme: "light" }}>
+    <html lang="en">
       <body className={`${inter.className} flex h-screen overflow-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex-1 flex">

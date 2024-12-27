@@ -1,7 +1,3 @@
-Here’s an updated and more detailed version of your GitHub repository description with a clear mention that the project is under development:
-
----
-
 # Task Manager
 
 A modern task management application built with Next.js, designed to provide a clean and efficient user experience. This project is currently under development and not yet complete, but features robust functionality for team collaboration and task tracking.

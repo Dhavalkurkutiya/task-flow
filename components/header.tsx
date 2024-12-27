@@ -18,7 +18,7 @@ export default function Header() {
           <div className="flex items-center gap-6">
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold">
-                <Link href="/">Task Manager</Link>
+                <Link href="/">Task Flow</Link>
               </h1>
             </div>
             <nav className="hidden sm:flex sm:gap-6">

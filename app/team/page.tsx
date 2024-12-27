@@ -14,28 +14,46 @@ import { Input } from "@/components/ui/input"
 
 const teamMembers = [
   {
-    name: "John Doe",
-    email: "john@example.com",
+    name: "Dhaval Kurkutiya",
+    email: "kurkutiya.dhaval@gmail.com",
     role: "Admin",
     tasks: 12,
   },
   {
-    name: "Jane Smith",
-    email: "jane@example.com",
+    name: "Suraj Ganvit",
+    email: "surajganvit@gmail.com",
     role: "Editor",
     tasks: 8,
   },
   {
-    name: "Bob Johnson",
-    email: "bob@example.com",
+    name: "Virpal Patel",
+    email: "virpalpatel@gmail.com",
     role: "Viewer",
     tasks: 5,
   },
   {
-    name: "Alice Brown",
-    email: "alice@example.com",
+    name: "Shubham Patel",
+    email: "shubhampatel@gmail.com",
     role: "Editor",
     tasks: 10,
+  },
+  {
+    name: "Dhaval Kurkutiya",
+    email: "kurkutiya.dhaval58@gmail.com",
+    role: "Admin",
+    tasks: 12,
+  },
+  {
+    name: "Suraj Ganvit",
+    email: "surajganvi25@gmail.com",
+    role: "Editor",
+    tasks: 8,
+  },
+  {
+    name: "Virpal Patel",
+    email: "virpalpatel25@gmail.com",
+    role: "Viewer",
+    tasks: 5,
   },
 ]
 

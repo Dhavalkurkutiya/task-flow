@@ -18,8 +18,8 @@ const tasks = [
     status: "In Progress", 
     priority: "High",
     assignee: {
-      name: "John Doe",
-      email: "john@example.com",
+      name: "Dhaval Kurkutiya",
+      email: "kurkutiya.dhaval@gmail.com",
     },
   },
   {
@@ -28,8 +28,8 @@ const tasks = [
     status: "To Do",
     priority: "Medium",
     assignee: {
-      name: "Jane Smith",
-      email: "jane@example.com",
+      name: "Suraj Ganvit",
+      email: "surajganvit@gmail.com",
     },
   },
   {
@@ -38,8 +38,8 @@ const tasks = [
     status: "In Review",
     priority: "Low",
     assignee: {
-      name: "Bob Johnson",
-      email: "bob@example.com",
+      name: "Virpal Patel",
+      email: "virpalpatel@gmail.com",
     },
   },
   {
@@ -48,8 +48,8 @@ const tasks = [
     status: "Done",
     priority: "Medium",
     assignee: {
-      name: "Alice Brown",
-      email: "alice@example.com",
+      name: "Shubham Patel",
+      email: "shubhampatel@gmail.com",
     },
   },
 ]

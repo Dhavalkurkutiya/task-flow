@@ -24,7 +24,7 @@ const features = [
         />
       </svg>
     ),
-    title: "Task Management",
+    title: "Task Flow",
     description:
       "Organize and track your tasks efficiently with our intuitive interface",
   },

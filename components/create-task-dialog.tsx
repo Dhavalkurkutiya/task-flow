@@ -33,7 +33,7 @@ export function CreateTaskDialog() {
         <DialogHeader>
           <DialogTitle>Create New Task</DialogTitle>
           <DialogDescription>
-            Fill in the details for the new task. Click save when you're done.
+            Fill in the details for the new task. Click save when youre done.
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">

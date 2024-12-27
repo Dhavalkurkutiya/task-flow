@@ -5,8 +5,8 @@ const tasks = [
     id: "TASK-8782",
     title: "You have a new task",
     assignee: {
-      name: "John Doe",
-      email: "john@example.com",
+      name: "Dhaval Kurkutiya",
+      email: "kurkutiya.dhaval@gmail.com",
     },
     status: "In Progress",
   },
@@ -14,8 +14,8 @@ const tasks = [
     id: "TASK-7878",
     title: "Complete project proposal",
     assignee: {
-      name: "Jane Smith",
-      email: "jane@example.com",
+      name: "Suraj Ganvit",
+      email: "surajganvit@gmail.com",
     },
     status: "To Do",
   },
@@ -23,8 +23,8 @@ const tasks = [
     id: "TASK-7512",
     title: "Review code changes",
     assignee: {
-      name: "Bob Johnson",
-      email: "bob@example.com",
+      name: "Virpal Patel",
+      email: "virpalpatel@gmail.com",
     },
     status: "In Review",
   },
@@ -32,8 +32,8 @@ const tasks = [
     id: "TASK-9090",
     title: "Update documentation",
     assignee: {
-      name: "Alice Brown",
-      email: "alice@example.com",
+      name: "Shubham Patel",
+      email: "shubhampatel@gmail.com",
     },
     status: "Done",
   },

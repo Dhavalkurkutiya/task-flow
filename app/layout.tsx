@@ -8,8 +8,8 @@ import { AuthProvider } from "@/AuthProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Task Management System",
-  description: "Efficient task management for teams",
+  title: "Task Flow - Streamline Team Collaboration and Productivity",
+  description: "Boost team productivity with our efficient Task Management System. Assign tasks, track progress, collaborate in real-time, and meet deadlines with ease",
 };
 
 export default function RootLayout({

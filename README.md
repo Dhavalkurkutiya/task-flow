@@ -15,7 +15,7 @@ A modern task management application built with Next.js, designed to provide a c
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/task-manager.git
+   git clone https://github.com/Dhavalkurkutiya/task-flow.git
    ```
 2. Install dependencies:
    ```bash
